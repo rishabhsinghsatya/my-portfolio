@@ -1,0 +1,21 @@
+.project-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card {
+  border: 1px solid #000;
+  width: 22vw;
+  height: 65vh;
+  padding: 8px;
+  border-radius: 8px;
+  flex: 1 1 20%;
+  max-width: 20%;
+}
