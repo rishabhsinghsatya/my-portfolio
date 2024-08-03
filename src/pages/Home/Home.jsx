@@ -21,6 +21,7 @@ const Home = () => {
           <button>Download CV</button>
           <button>Contact info</button>
         </div>
+        <div className="social-links"></div>
       </div>
       <div className="home-page-right">
         <img src={profile} alt="" />
