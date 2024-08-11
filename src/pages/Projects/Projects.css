@@ -7,15 +7,14 @@
 
 .projects-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .profile-card {
   border: 1px solid #000;
-  width: 22vw;
-  height: 65vh;
+  width: 22rem;
+  height: 10rem;
   padding: 8px;
   border-radius: 8px;
-  flex: 1 1 20%;
-  max-width: 20%;
 }

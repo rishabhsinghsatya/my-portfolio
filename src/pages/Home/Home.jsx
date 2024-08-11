@@ -18,7 +18,9 @@ const Home = () => {
           and JavaScript.
         </p> */}
         <div className="btn-list">
-          <button>Download CV</button>
+          <a href="src\assets\RRishabhSS.pdf" download="Rishabh_1_YOE">
+            <button>Download CV</button>
+          </a>
           <button>Contact info</button>
         </div>
         <div className="social-links"></div>

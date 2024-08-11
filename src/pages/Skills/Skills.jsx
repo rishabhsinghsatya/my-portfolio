@@ -16,7 +16,8 @@ const Skills = () => {
       <button>Git</button>
       <button>Github</button>
       <button>Docker</button>
-      <h1>. . .</h1>
+      <button>Next Js</button>
+      {/* <h1>. . .</h1> */}
       </div>
     </div>
   );
