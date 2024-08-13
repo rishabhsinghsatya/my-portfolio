@@ -13,7 +13,7 @@ const About = () => {
           <Cards
             icon={"🎯"}
             heading={"Experience"}
-            subHeading={"2-year"}
+            subHeading={"1-year"}
             profession={"Frontend Developer"}
           />
           <Cards
