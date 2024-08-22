@@ -1,62 +1,71 @@
-/* src/Contact.css */
-.contact-page {
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+.card {
+  position: relative;
+  width: 420px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+  overflow: hidden;
+}
+.card-content {
+  position: relative;
+  z-index: 1;
   padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
 }
-
-.contact-page h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  color: #333;
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
 }
-
-.contact-page p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+h2 {
+  margin: 2px 0 15px;
+  font-size: 16px;
   color: #666;
 }
-
 .contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact-item {
-  flex: 1 1 calc(50% - 20px);
-  background-color: #f9f9f9;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact-item h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 14px;
   color: #444;
 }
-
-.contact-item p {
-  font-size: 1.2rem;
-  color: #0073e6;
+.contact-info p {
+  margin: 5px 0;
 }
-
-.contact-item a {
-  text-decoration: none;
-  color: #0073e6;
+.icons-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 16px;
 }
-
-.contact-item a:hover {
-  text-decoration: underline;
+.icon {
+  margin-right: 5px;
+  color: #000;
 }
-
-@media (max-width: 600px) {
-  .contact-item {
-    flex: 1 1 100%;
-  }
+.shape {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+}
+.green {
+  background-color: rgba(178, 182, 178, 0.3);
+  top: -50px;
+  right: -50px;
+}
+.orange {
+  background-color: rgba(90, 89, 88, 0.3);
+  top: -30px;
+  right: 20px;
+}
+.purple {
+  background-color: rgba(109, 106, 109, 0.3);
+  bottom: -50px;
+  right: -30px;
 }

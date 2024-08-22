@@ -1,38 +1,53 @@
-// src/Contact.js
-import React from 'react';
-import './Contact.css';
+import React from "react";
+import "./Contact.css";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  PhoneIcon,
+  SquareM,
+} from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="contact-page">
-      <h1>Contact Me</h1>
-      <p>I'd love to hear from you! Here's how you can reach me:</p>
-
-      <div className="contact-info">
-        <div className="contact-item">
-          <h2>Email</h2>
-          <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <div className="card-container">
+      <div className="card">
+        <div className="card-content">
+          <h1>Rishabh Singh Satya</h1>
+          <h2>Frontend Developer</h2>
+          <div className="contact-info">
+            <p>
+              <span className="icon">
+                <PhoneIcon />
+              </span>{" "}
+              +91-7037659803
+            </p>
+            <p>
+              <span className="icon">
+                <Mail />
+              </span>
+              vineetsatya36@gmail.com
+            </p>
+            <div className="icons-list">
+              <a href="https://github.com/rishabhsinghsatya" target="_blank">
+                <Github />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rishabh-singh-satya-675899202/"
+                target="_blank"
+              >
+                <Linkedin />
+              </a>
+              <a href="https://medium.com/@vineetsatya36" target="_blank">
+                <SquareM />
+              </a>
+            </div>
+          </div>
         </div>
-
-        <div className="contact-item">
-          <h2>Phone</h2>
-          <p><a href="tel:+1234567890">+1234567890</a></p>
-        </div>
-
-        <div className="contact-item">
-          <h2>LinkedIn</h2>
-          <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></p>
-        </div>
-
-        <div className="contact-item">
-          <h2>GitHub</h2>
-          <p><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
-        </div>
-
-        <div className="contact-item">
-          <h2>Twitter</h2>
-          <p><a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">@yourusername</a></p>
-        </div>
+        <div className="shape green"></div>
+        <div className="shape orange"></div>
+        <div className="shape purple"></div>
       </div>
     </div>
   );
