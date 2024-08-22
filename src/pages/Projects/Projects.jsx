@@ -10,9 +10,6 @@ const Projects = () => {
           className={"profile-card"}
           title={"teecraft"}
           technology={"react | css | js"}
-          description={
-            "An e-commerce platform showcasing Paithani silk sarees with mock backend, login and signup management functionality."
-          }
           link={"https://teecraft-rishabh.netlify.app/"}
           code={"https://teecraft-rishabh.netlify.app/"}
         />
@@ -20,9 +17,6 @@ const Projects = () => {
           className={"profile-card"}
           title={"teecraft"}
           technology={"react | css | js"}
-          description={
-            "An e-commerce platform showcasing Paithani silk sarees with mock backend, login and signup management functionality."
-          }
           link={"https://teecraft-rishabh.netlify.app/"}
           code={"https://teecraft-rishabh.netlify.app/"}
         />
@@ -30,9 +24,6 @@ const Projects = () => {
           className={"profile-card"}
           title={"teecraft"}
           technology={"react | css | js"}
-          description={
-            "An e-commerce platform showcasing Paithani silk sarees with mock backend, login and signup management functionality."
-          }
           link={"https://teecraft-rishabh.netlify.app/"}
           code={"https://teecraft-rishabh.netlify.app/"}
         />
@@ -40,9 +31,6 @@ const Projects = () => {
           className={"profile-card"}
           title={"teecraft"}
           technology={"react | css | js"}
-          description={
-            "An e-commerce platform showcasing Paithani silk sarees with mock backend, login and signup management functionality."
-          }
           link={"https://teecraft-rishabh.netlify.app/"}
           code={"https://teecraft-rishabh.netlify.app/"}
         />
@@ -50,9 +38,6 @@ const Projects = () => {
           className={"profile-card"}
           title={"teecraft"}
           technology={"react | css | js"}
-          description={
-            "An e-commerce platform showcasing Paithani silk sarees with mock backend, login and signup management functionality."
-          }
           link={"https://teecraft-rishabh.netlify.app/"}
           code={"https://teecraft-rishabh.netlify.app/"}
         />
@@ -60,9 +45,6 @@ const Projects = () => {
           className={"profile-card"}
           title={"teecraft"}
           technology={"react | css | js"}
-          description={
-            "An e-commerce platform showcasing Paithani silk sarees with mock backend, login and signup management functionality."
-          }
           link={"https://teecraft-rishabh.netlify.app/"}
           code={"https://teecraft-rishabh.netlify.app/"}
         />
@@ -73,21 +55,22 @@ const Projects = () => {
 
 export default Projects;
 
-export const ProjectCards = ({
-  className,
-  title,
-  technology,
-  description,
-  link,
-  code,
-}) => {
+export const ProjectCards = ({ className, title, technology, link, code }) => {
   return (
     <div className={className}>
       <h2>{title}</h2>
       <h3>{technology}</h3>
-      <p>{description}</p>
       <div className="link-list">
-        <a href={link} target="_blank">
+        <a
+          href={link}
+          target="_blank"
+          style={{
+            textDecoration: "none",
+            cursor: "pointer",
+            color: "black",
+            marginRight: "5px",
+          }}
+        >
           View
         </a>
         <a href={code} target="_blank">
